@@ -1,46 +1,48 @@
+# Python related
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+
 # Virtual environment
 venv/
+env/
+ENV/
+.venv/
+.ENV/
 
-# Environment configuration
-.env
-
-# Python compiled files
-*.pyc
-__pycache__/
-
-# Django migration files
+# Django specific
 db.sqlite3
-*.sqlite3
-*.pyc
+/static/
+/media/
 
-# IDE/Editor files
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+coverage.xml
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+
+# IDEs
 .vscode/
 .idea/
-*.pyc
 
-# System files
-*.DS_Store
-Thumbs.db
-
-# Logs and temporary files
+# Log files
 *.log
-logs/
-*.swp
+*.pot
 
-# Dependency files
-requirements.txt
-Pipfile
-Pipfile.lock
-
-# Compiled JavaScript/CSS files
-*.js
-*.css
-*.map
-
-# Miscellaneous
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Secrets and sensitive information
-.env
+# OS generated files
+.DS_Store
+Thumbs.db
